@@ -1,0 +1,13 @@
+package smokeTests;
+
+import org.openqa.selenium.WebDriver;
+
+public class PageTitleJUnity {
+
+	String webPage_url = "http://www.digitalfeet.com";
+	String browserType = "edge";
+	
+	//WebDriver init
+	WebDriver driver;
+	driver = utilities.DriverFactory.open(browserType);
+}
