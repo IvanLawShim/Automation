@@ -16,35 +16,26 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		String webPage_url = "http://www.digitalfeet.com";
-		String browserType = "chrome";
+		String browserType = "edge";
 		WebDriver driver;
-		
-		if (browserType.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Automation\\animationtest\\resources\\browser_drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-		}else if (browserType.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", "D:\\Automation\\animationtest\\resources\\browser_drivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		}else {
-			System.setProperty("webdriver.chrome.driver", "D:\\Automation\\animationtest\\resources\\browser_drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-		}
-
+		driver = utilities.DriverFactory.open(browserType);
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		
 		String PageSrc;
 		List<WebElement> allLinks;
-		JavascriptExecutor js;
 		
+		JavascriptExecutor js;
 		js = (JavascriptExecutor) driver;
 		
+		WebElement metaDescription = driver.findElement(By.xpath("//meta[@name='description']"));
+				
 		driver.get(webPage_url);
 		driver.manage().window().maximize();
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#menu-item-15078 .menu-text")));
 		
 		System.out.println(driver.getTitle());
-		System.out.println(driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content"));
+		System.out.println(metaDescription.getAttribute("content"));
 		
 		driver.close();
 		driver.quit();
