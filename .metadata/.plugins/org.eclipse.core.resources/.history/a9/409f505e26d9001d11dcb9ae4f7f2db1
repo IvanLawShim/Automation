@@ -1,0 +1,22 @@
+package smokeTests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class scriptingWithTestNG {
+
+	@Test
+	public void findTheelements() {
+		String webPage_url = "http://www.digitalfeet.com";
+		String browserType = "chrome";
+		WebDriver driver;
+		
+		driver = utilities.DriverFactory.open(browserType);
+		
+		driver.get(webPage_url);
+		boolean titlePage = driver.findElement(By.xpath("//meta[@name='description']")).isDisplayed();
+		
+		driver.quit();
+	}
+}

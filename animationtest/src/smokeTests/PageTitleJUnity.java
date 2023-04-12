@@ -1,29 +1,43 @@
 package smokeTests;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 public class PageTitleJUnity {
+	
+	String webPage_url = "http://www.digitalfeet.com";
+	String browserType = "chrome";
+	WebDriver driver;
+	
 
 	@Test
 	public void pageTitleTest() {
-		String webPage_url = "http://www.digitalfeet.com";
-		String browserType = "chrome";
 		String actualTitle, expectedTitle;
 		
-		//WebDriver init
-		WebDriver driver;
-		driver = utilities.DriverFactory.open(browserType);
 		driver.get(webPage_url);
 		
 		actualTitle = driver.getTitle();
-		expectedTitle = "Digital Feet";
+		expectedTitle = driver.getTitle();
 		
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 		driver.close();
 		driver.quit();
+	}
+	
+	@Before
+	public void init() {
+		System.out.println("Starting!");
+		driver = utilities.DriverFactory.open(browserType);
+	}
+	
+	@After
+	public void disable() {
+		System.out.println("Exit");
+		driver.close();
 	}
 }

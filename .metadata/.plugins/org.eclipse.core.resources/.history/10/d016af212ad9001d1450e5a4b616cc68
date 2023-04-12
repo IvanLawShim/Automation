@@ -1,0 +1,9 @@
+package smokeTests;
+
+import org.testng.annotations.Test;
+
+public class ATagsTesting {
+  @Test
+  public void f() {
+  }
+}
