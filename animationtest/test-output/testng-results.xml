@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-12T20:06:47 PST" name="Default suite" finished-at="2023-04-12T20:07:08 PST" duration-ms="21502">
+  <suite started-at="2023-04-13T13:50:13 PST" name="Default suite" finished-at="2023-04-13T13:50:23 PST" duration-ms="9485">
     <groups>
     </groups>
-    <test started-at="2023-04-12T20:06:47 PST" name="Default test" finished-at="2023-04-12T20:07:08 PST" duration-ms="21502">
+    <test started-at="2023-04-13T13:50:13 PST" name="Default test" finished-at="2023-04-13T13:50:23 PST" duration-ms="9485">
       <class name="smokeTests.ATagsTesting">
-        <test-method is-config="true" signature="init()[pri:0, instance:smokeTests.ATagsTesting@d29f28]" started-at="2023-04-12T20:06:47 PST" name="init" finished-at="2023-04-12T20:07:07 PST" duration-ms="19989" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:smokeTests.ATagsTesting@3514a4c0]" started-at="2023-04-13T13:50:13 PST" name="init" finished-at="2023-04-13T13:50:21 PST" duration-ms="7888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findTheelements()[pri:0, instance:smokeTests.ATagsTesting@d29f28]" started-at="2023-04-12T20:07:07 PST" name="findTheelements" finished-at="2023-04-12T20:07:08 PST" duration-ms="1364" status="PASS">
+        <test-method signature="findTheelements()[pri:0, instance:smokeTests.ATagsTesting@3514a4c0]" started-at="2023-04-13T13:50:21 PST" name="findTheelements" finished-at="2023-04-13T13:50:22 PST" duration-ms="1392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findTheelements -->
-        <test-method is-config="true" signature="executed()[pri:0, instance:smokeTests.ATagsTesting@d29f28]" started-at="2023-04-12T20:07:08 PST" name="executed" finished-at="2023-04-12T20:07:08 PST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="executed()[pri:0, instance:smokeTests.ATagsTesting@3514a4c0]" started-at="2023-04-13T13:50:22 PST" name="executed" finished-at="2023-04-13T13:50:23 PST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executed -->
