@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-13T13:50:13 PST" name="Default suite" finished-at="2023-04-13T13:50:23 PST" duration-ms="9485">
+  <suite started-at="2023-04-13T16:06:26 PST" name="Tags Testing" finished-at="2023-04-13T16:06:41 PST" duration-ms="14836">
     <groups>
     </groups>
-    <test started-at="2023-04-13T13:50:13 PST" name="Default test" finished-at="2023-04-13T13:50:23 PST" duration-ms="9485">
+    <test started-at="2023-04-13T16:06:26 PST" name="Gathering ATags" finished-at="2023-04-13T16:06:34 PST" duration-ms="8362">
       <class name="smokeTests.ATagsTesting">
-        <test-method is-config="true" signature="init()[pri:0, instance:smokeTests.ATagsTesting@3514a4c0]" started-at="2023-04-13T13:50:13 PST" name="init" finished-at="2023-04-13T13:50:21 PST" duration-ms="7888" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:smokeTests.ATagsTesting@5f9b2141]" started-at="2023-04-13T16:06:26 PST" name="init" finished-at="2023-04-13T16:06:33 PST" duration-ms="6951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findTheelements()[pri:0, instance:smokeTests.ATagsTesting@3514a4c0]" started-at="2023-04-13T13:50:21 PST" name="findTheelements" finished-at="2023-04-13T13:50:22 PST" duration-ms="1392" status="PASS">
+        <test-method signature="findTheelements()[pri:0, instance:smokeTests.ATagsTesting@5f9b2141]" started-at="2023-04-13T16:06:33 PST" name="findTheelements" finished-at="2023-04-13T16:06:34 PST" duration-ms="1307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findTheelements -->
-        <test-method is-config="true" signature="executed()[pri:0, instance:smokeTests.ATagsTesting@3514a4c0]" started-at="2023-04-13T13:50:22 PST" name="executed" finished-at="2023-04-13T13:50:23 PST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="executed()[pri:0, instance:smokeTests.ATagsTesting@5f9b2141]" started-at="2023-04-13T16:06:34 PST" name="executed" finished-at="2023-04-13T16:06:34 PST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executed -->
       </class> <!-- smokeTests.ATagsTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Gathering ATags -->
+    <test started-at="2023-04-13T16:06:34 PST" name="Scripting Test" finished-at="2023-04-13T16:06:41 PST" duration-ms="6434">
+      <class name="smokeTests.scriptingWithTestNG">
+        <test-method is-config="true" signature="init()[pri:0, instance:smokeTests.scriptingWithTestNG@306e95ec]" started-at="2023-04-13T16:06:34 PST" name="init" finished-at="2023-04-13T16:06:41 PST" duration-ms="6277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="findTheelements()[pri:0, instance:smokeTests.scriptingWithTestNG@306e95ec]" started-at="2023-04-13T16:06:41 PST" name="findTheelements" finished-at="2023-04-13T16:06:41 PST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheelements -->
+        <test-method is-config="true" signature="executed()[pri:0, instance:smokeTests.scriptingWithTestNG@306e95ec]" started-at="2023-04-13T16:06:41 PST" name="executed" finished-at="2023-04-13T16:06:41 PST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executed -->
+      </class> <!-- smokeTests.scriptingWithTestNG -->
+    </test> <!-- Scripting Test -->
+  </suite> <!-- Tags Testing -->
 </testng-results>

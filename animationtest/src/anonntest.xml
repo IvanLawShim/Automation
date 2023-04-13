@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test">
+<suite parallel="false" name="Tags Testing">
+  <test name="Gathering ATags">
     <classes>
       <class name="smokeTests.ATagsTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Scripting Test">
+    <classes>
+      <class name="smokeTests.scriptingWithTestNG"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

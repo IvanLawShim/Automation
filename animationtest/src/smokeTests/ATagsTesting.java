@@ -33,6 +33,6 @@ public class ATagsTesting {
 	
 	@AfterMethod
 	public void executed() {
-		driver.quit();
+		driver.close();
 	}
 }
